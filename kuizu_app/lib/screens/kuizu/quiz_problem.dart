@@ -24,6 +24,59 @@ class _QuizeProblemState extends State<QuizeProblem> {
           ),
         ],
       ),
+      body: Column(
+        children: <Widget>[
+          // 画像付き問題文のリストカード
+          Card(
+            child: Container(
+              height: 220, // 高さ
+              width: double.infinity, // 幅
+              child: ListTile( // 画像と文字
+                leading: Image.network('https://placehold.jp/50x50.png'),
+                title: Text('Card and ListTile'),
+                subtitle: Text('subtitle'),
+                // trailing: Icon(Icons.more_vert), // アイコン
+              ),
+            ),
+          ),
+          SizedBox(height: 20.0),
+          // 四択回答用のリストカード
+          Card(
+            child: Container(
+              height: 70,
+              width: double.infinity,
+              child: Text('Card'),
+            ),
+          ),
+          SizedBox(height: 10.0),
+          // 四択回答用のリストカード
+          Card(
+            child: Container(
+              height: 70,
+              width: double.infinity,
+              child: Text('Card'),
+            ),
+          ),
+          SizedBox(height: 10.0),
+          // 四択回答用のリストカード
+          Card(
+            child: Container(
+              height: 70,
+              width: double.infinity,
+              child: Text('Card'),
+            ),
+          ),
+          SizedBox(height: 10.0),
+          // 四択回答用のリストカード
+          Card(
+            child: Container(
+              height: 70,
+              width: double.infinity,
+              child: Text('Card'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

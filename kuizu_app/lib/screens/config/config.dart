@@ -1,48 +1,30 @@
-// 記号の形を回答する画面
+// 設定画面
 import 'package:flutter/material.dart';
 
-class SignProblem extends StatefulWidget {
+class Config extends StatefulWidget {
   @override
-  _SignProblemState createState() => _SignProblemState();
+  _ConfigState createState() => _ConfigState();
 }
 
-class _SignProblemState extends State<SignProblem> {
+class _ConfigState extends State<Config> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( // アプリバー
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        title: Text("設定画面"),
+        centerTitle: true,
+        elevation: 0,
         leading: IconButton( // 戻るボタン　アイコン
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
             Navigator.pushNamed(context, "/home"); // 指定した先に移動
           },
         ),
-        title: Text('記号の形を回答する画面'),
-        centerTitle: true,
-        actions: <Widget>[
-          IconButton( // 設定ボタン　アイコン
-            icon: Icon(Icons.settings),
-            onPressed: () {
-              Navigator.pushNamed(context, "/config"); // 指定した先に移動
-            },
-          ),
-        ],
       ),
       body: Column(
         children: <Widget>[
-          // 画像付き問題文のリストカード
-          Card(
-            child: Container(
-              height: 220, // 高さ
-              width: double.infinity, // 幅
-              child: ListTile( // 画像と文字
-                leading: Image.network('https://placehold.jp/50x50.png'),
-                title: Text('Card and ListTile'),
-                subtitle: Text('subtitle'),
-                // trailing: Icon(Icons.more_vert), // アイコン
-              ),
-            ),
-          ),
           SizedBox(height: 20.0),
           // 四択回答用のリストカード
           Card(
@@ -81,6 +63,20 @@ class _SignProblemState extends State<SignProblem> {
           ),
         ],
       ),
+      // appBar: AppBar( // アプリバー
+      //   leading: IconButton( // 戻るボタン　アイコン
+      //     icon: Icon(Icons.arrow_back, color: Colors.white),
+      //     onPressed: () => Navigator.of(context).pop(),
+      //   ),
+      //   title: Text('設定画面'),
+      //   centerTitle: true,
+      //   actions: <Widget>[
+      //     IconButton( // 設定ボタン　アイコン
+      //       icon: Icon(Icons.settings),
+      //       onPressed: () {},
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

@@ -29,35 +29,38 @@ class _CategoryState extends State<Category> {
         ],
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(
-                width: 130.0,
-                height: 100.0,
-                child: new RaisedButton(
-                  color: Colors.white, // ボタンの背景色
-                  child: Icon(
-                    Icons.gps_fixed, // 地図アイコン
-                    color: Colors.lightBlue,
-                    size: 50.0,
-                  ),
-                  shape: CircleBorder( // 円形
-                    side: BorderSide( // 枠線
-                      color: Colors.white,
-                      width: 1.0,
-                      style: BorderStyle.solid,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                  width: 100.0,
+                  height: 100.0,
+                  child: new RaisedButton(
+                    color: Colors.white, // ボタンの背景色
+                    child: Icon(
+                      Icons.gps_fixed, // 地図アイコン
+                      color: Colors.lightBlue,
+                      size: 50.0,
                     ),
+                    shape: CircleBorder( // 円形
+                      side: BorderSide( // 枠線
+                        color: Colors.white,
+                        width: 1.0,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () { // 指定先へ移動
+                      Navigator.pushNamed(context, '/main');
+                    },
                   ),
-                  onPressed: () { // 指定先へ移動
-                    Navigator.pushNamed(context, '/main');
-                  },
                 ),
-              ),
-              SizedBox(
-                width: 130.0,
+                  SizedBox(
+                width: 100.0,
                 height: 100.0,
                 child: new RaisedButton(
                   color: Colors.white, // ボタンの背景色
@@ -78,8 +81,8 @@ class _CategoryState extends State<Category> {
                   },
                 ),
               ),
-              SizedBox(
-                width: 130.0,
+                  SizedBox(
+                width: 100.0,
                 height: 100.0,
                 child: new RaisedButton(
                   color: Colors.white, // ボタンの背景色
@@ -100,115 +103,150 @@ class _CategoryState extends State<Category> {
                   },
                 ),
               ),
-            ],
-          ),
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //   crossAxisAlignment: CrossAxisAlignment.start,
-          //   children: <Widget>[
-          //     Text("地図記号"),
-          //     Text("地図記号"),
-          //     Text("地図記号"),
-          //   ],
-          // ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              SizedBox(
-                width: 130.0,
-                height: 100.0,
-                child: new RaisedButton(
-                  color: Colors.white, // ボタンの背景色
-                  child: Icon(
-                    Icons.music_note, // 音楽アイコン
-                    color: Colors.lightBlue,
-                    size: 50.0,
-                  ),
-                  shape: CircleBorder( // 円形
-                    side: BorderSide( // 枠線
-                      color: Colors.white,
-                      width: 1.0,
-                      style: BorderStyle.solid,
-                    ),
-                  ),
-                  onPressed: () { // 指定先へ移動
-                    Navigator.pushNamed(context, '/main');
-                  },
-                ),
+                ],
               ),
-              SizedBox(
-                width: 130.0,
-                height: 100.0,
-                child: new RaisedButton(
-                  color: Colors.white, // ボタンの背景色
-                  child: Icon(
-                    Icons.star, // 星座アイコン
-                    color: Colors.lightBlue,
-                    size: 50.0,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    '地図記号',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
                   ),
-                  shape: CircleBorder( // 円形
-                    side: BorderSide( // 枠線
-                      color: Colors.white,
-                      width: 1.0,
-                      style: BorderStyle.solid,
-                    ),
+                  Text(
+                    '天気記号',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
                   ),
-                  onPressed: () { // 指定先へ移動
-                    Navigator.pushNamed(context, '/main');
-                  },
-                ),
-              ),
-              SizedBox(
-                width: 130.0,
-                height: 100.0,
-                child: new RaisedButton(
-                  color: Colors.white, // ボタンの背景色
-                  child: Icon(
-                    Icons.star_half, // 家紋アイコン
-                    color: Colors.lightBlue,
-                    size: 50.0,
+                  Text(
+                    'マップ記号',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
                   ),
-                  shape: CircleBorder( // 円形
-                    side: BorderSide( // 枠線
-                      color: Colors.white,
-                      width: 1.0,
-                      style: BorderStyle.solid,
-                    ),
-                  ),
-                  onPressed: () { // 指定先へ移動
-                    Navigator.pushNamed(context, '/main');
-                  },
-                ),
+                ],
               ),
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(
-                width: 130.0,
-                height: 100.0,
-                child: new RaisedButton(
-                  color: Colors.white, // ボタンの背景色
-                  child: Icon(
-                    Icons.filter_vintage, // 日本文様アイコン
-                    color: Colors.lightBlue,
-                    size: 50.0,
-                  ),
-                  shape: CircleBorder( // 円形
-                    side: BorderSide( // 枠線
-                      color: Colors.white,
-                      width: 1.0,
-                      style: BorderStyle.solid,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                    width: 100.0,
+                    height: 100.0,
+                    child: new RaisedButton(
+                      color: Colors.white, // ボタンの背景色
+                      child: Icon(
+                        Icons.music_note, // 音楽アイコン
+                        color: Colors.lightBlue,
+                        size: 50.0,
+                      ),
+                      shape: CircleBorder( // 円形
+                        side: BorderSide( // 枠線
+                          color: Colors.white,
+                          width: 1.0,
+                          style: BorderStyle.solid,
+                        ),
+                      ),
+                      onPressed: () { // 指定先へ移動
+                        Navigator.pushNamed(context, '/main');
+                      },
                     ),
                   ),
-                  onPressed: () { // 指定先へ移動
-                    Navigator.pushNamed(context, '/main');
-                  },
-                ),
+                  SizedBox(
+                    width: 100.0,
+                    height: 100.0,
+                    child: new RaisedButton(
+                      color: Colors.white, // ボタンの背景色
+                      child: Icon(
+                        Icons.star, // 星座アイコン
+                        color: Colors.lightBlue,
+                        size: 50.0,
+                      ),
+                      shape: CircleBorder( // 円形
+                        side: BorderSide( // 枠線
+                          color: Colors.white,
+                          width: 1.0,
+                          style: BorderStyle.solid,
+                        ),
+                      ),
+                      onPressed: () { // 指定先へ移動
+                        Navigator.pushNamed(context, '/main');
+                      },
+                    ),
+                  ),
+                  SizedBox(
+                    width: 100.0,
+                    height: 100.0,
+                    child: new RaisedButton(
+                      color: Colors.white, // ボタンの背景色
+                      child: Icon(
+                        Icons.star_half, // 家紋アイコン
+                        color: Colors.lightBlue,
+                        size: 50.0,
+                      ),
+                      shape: CircleBorder( // 円形
+                        side: BorderSide( // 枠線
+                          color: Colors.white,
+                          width: 1.0,
+                          style: BorderStyle.solid,
+                        ),
+                      ),
+                      onPressed: () { // 指定先へ移動
+                        Navigator.pushNamed(context, '/main');
+                      },
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(
-                width: 130.0,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    '音楽',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                  ),
+                  Text(
+                    '星座',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                  ),
+                  Text(
+                    '家紋',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                  width: 100.0,
+                  height: 100.0,
+                  child: new RaisedButton(
+                    color: Colors.white, // ボタンの背景色
+                    child: Icon(
+                      Icons.filter_vintage, // 日本文様アイコン
+                      color: Colors.lightBlue,
+                      size: 50.0,
+                    ),
+                    shape: CircleBorder( // 円形
+                      side: BorderSide( // 枠線
+                        color: Colors.white,
+                        width: 1.0,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () { // 指定先へ移動
+                      Navigator.pushNamed(context, '/main');
+                    },
+                  ),
+                ),
+                SizedBox(
+                width: 100.0,
                 height: 100.0,
                 child: new RaisedButton(
                   color: Colors.white, // ボタンの背景色
@@ -230,12 +268,12 @@ class _CategoryState extends State<Category> {
                 ),
               ),
               SizedBox(
-                width: 130.0,
+                width: 100.0,
                 height: 100.0,
                 child: new RaisedButton(
                   color: Colors.white, // ボタンの背景色
                   child: Icon(
-                    Icons.star_half, // 天体アイコン
+                    Icons.error, // マップアイコン
                     color: Colors.lightBlue,
                     size: 50.0,
                   ),
@@ -250,6 +288,25 @@ class _CategoryState extends State<Category> {
                     Navigator.pushNamed(context, '/main');
                   },
                 ),
+              ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    '音楽',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                  ),
+                  Text(
+                    '星座',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                  ),
+                  Text(
+                    '家紋',
+                    style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                  ),
+                ],
               ),
             ],
           ),

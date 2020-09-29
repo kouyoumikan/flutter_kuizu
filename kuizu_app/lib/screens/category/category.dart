@@ -65,8 +65,8 @@ class _CategoryState extends State<Category> {
                   //   ),
                   // ),
                     SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.green, // ボタンの背景色
                     child: Icon(
@@ -88,8 +88,8 @@ class _CategoryState extends State<Category> {
                   ),
                 ),
                     SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.blueAccent, // ボタンの背景色
                     child: Icon(
@@ -115,19 +115,19 @@ class _CategoryState extends State<Category> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    // Text(
-                    //   '地図記号',
-                    //   style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
-                    // ),
-                    Text(
-                      // '天気記号',
-                      '地図記号',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "地図記号",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
-                    Text(
-                      // 'マップ記号',
-                      '天気記号',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "天気記号",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
                   ],
                 ),
@@ -162,8 +162,8 @@ class _CategoryState extends State<Category> {
                     //   ),
                     // ),
                     SizedBox(
-                      width: 100.0,
-                      height: 100.0,
+                      width: 90.0,
+                      height: 90.0,
                       child: new RaisedButton(
                         color: Colors.redAccent, // ボタンの背景色
                         child: Icon(
@@ -185,8 +185,8 @@ class _CategoryState extends State<Category> {
                       ),
                     ),
                     SizedBox(
-                      width: 100.0,
-                      height: 100.0,
+                      width: 90.0,
+                      height: 90.0,
                       child: new RaisedButton(
                         color: Colors.orange, // ボタンの背景色
                         child: Icon(
@@ -212,19 +212,19 @@ class _CategoryState extends State<Category> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    // Text(
-                    //   '音楽',
-                    //   style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
-                    // ),
-                    Text(
-                      // '星座',
-                      'マップ記号',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "マップ記号",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
-                    Text(
-                      // '家紋',
-                      '音楽記号',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "音楽記号",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
                   ],
                 ),
@@ -259,8 +259,8 @@ class _CategoryState extends State<Category> {
                   //   ),
                   // ),
                   SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.amberAccent, // ボタンの背景色
                     child: Icon(
@@ -282,8 +282,8 @@ class _CategoryState extends State<Category> {
                   ),
                 ),
                 SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.grey, // ボタンの背景色
                     child: Icon(
@@ -309,17 +309,19 @@ class _CategoryState extends State<Category> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    // Text(
-                    //   '音楽',
-                    //   style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
-                    // ),
-                    Text(
-                      '星座',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "星座",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
-                    Text(
-                      '家紋',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "家紋",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
                   ],
                 ),
@@ -354,8 +356,8 @@ class _CategoryState extends State<Category> {
                   //   ),
                   // ),
                   SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.greenAccent, // ボタンの背景色
                     child: Icon(
@@ -377,8 +379,8 @@ class _CategoryState extends State<Category> {
                   ),
                 ),
                 SizedBox(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 90.0,
+                  height: 90.0,
                   child: new RaisedButton(
                     color: Colors.purple, // ボタンの背景色
                     child: Icon(
@@ -403,17 +405,19 @@ class _CategoryState extends State<Category> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    // Text(
-                    //   '音楽',
-                    //   style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
-                    // ),
-                    Text(
-                      '　日本文様',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        "  ローマ数字",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
-                    Text(
-                      'ヒエログリフ',
-                      style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600]),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Text(
+                        " ヒエログリフ",
+                        style: TextStyle(letterSpacing: 2.0, color: Colors.grey[600])
+                      ),
                     ),
                   ],
                 ),

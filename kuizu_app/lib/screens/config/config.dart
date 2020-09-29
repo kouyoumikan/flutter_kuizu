@@ -12,16 +12,16 @@ class _ConfigState extends State<Config> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        backgroundColor: Colors.blue[900],
+        // backgroundColor: Colors.blue[900],
         title: Text("設定画面"),
         centerTitle: true,
         elevation: 0,
-        leading: IconButton( // 戻るボタン　アイコン
-          icon: Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () {
-            Navigator.pushNamed(context, "/home"); // 指定した先に移動
-          },
-        ),
+        // leading: IconButton( // 戻るボタン　アイコン
+        //   icon: Icon(Icons.arrow_back, color: Colors.white),
+        //   onPressed: () {
+        //     Navigator.pushNamed(context, "/home"); // 指定した先に移動
+        //   },
+        // ),
       ),
       body: Column(
         children: <Widget>[
